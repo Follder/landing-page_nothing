@@ -1,0 +1,40 @@
+.header {
+  font-family: 'Space Grotesk', sans-serif;
+
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+
+    transform-origin: left center;
+
+    @include on-tablet {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    animation: pulse 1s ease-in-out infinite alternate;
+  }
+
+  &__bottom {
+    padding-bottom: 40px;
+
+    @include on-tablet {
+      padding-bottom: 65px;
+    }
+  }
+}
